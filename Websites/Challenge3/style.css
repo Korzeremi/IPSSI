@@ -1,0 +1,50 @@
+body{
+display: flex;
+justify-content: center;
+margin-top: 20%;
+}
+
+.cube{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s ease-in-out 1s;
+}
+
+.cube > .casserolle1:hover{
+    transform:rotateY(180deg);
+}
+
+.cube > .casserolle1:hover ~ div{
+    transform:rotateY(180deg);
+}
+
+
+.cube > .casserolle1{
+    
+    background-color: black;
+    width: 250px;
+    height:40px;
+    transition: all 1s ease;
+}
+
+.cube > .casserolle2{
+    background-color: black;
+    width: 200px;
+    height:40px;
+    transition: all 1s 300ms ease-in-out;
+}
+
+.cube > .casserolle3{
+    background-color: black;
+    width: 150px;
+    height:40px;
+    transition: all 1s 600ms ease-in-out;
+}
+
+.cube > .casserolle4{
+    background-color: black;
+    width: 100px;
+    height:40px;
+    transition: all 1s 900ms ease-in-out;
+}

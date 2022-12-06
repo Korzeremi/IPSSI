@@ -1,0 +1,153 @@
+/* *{
+    font-family: ;
+} */
+
+body{
+    background-color: #212C36;
+    margin: auto ;
+}
+
+.topbar{
+    background-color: #2C3844;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar > .BtnMode{
+    color: aliceblue;
+    margin-right: 3.5%;
+    display: flex;
+    align-items: center;
+}
+
+.topbar > .TextTitle{
+    color: aliceblue;
+    margin-left: 3.5%;
+    width: 25%;
+}
+
+.img{
+    height: 25px;
+    margin-left: -110%;
+}
+
+.page > .BackBtn{
+    background-color: #2C3844;
+    border-radius: 5px;
+    transform: scale(0.75);
+    margin: 35px;
+    width: 100px;
+    height:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page > .BackBtn > .Text{
+    color:white;
+    margin-left: -150px;
+}
+
+.img2{
+    transform: scale(0.075);
+    margin-left: -170px;
+}
+
+.page > .main > .img3{
+    height: 300px;
+    width:400px;
+    /* margin-left: 47px; */
+    border-radius: 5%;
+}
+
+.page > .main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.page > .main > .descr{
+    height:200px;
+    width:400px;
+}
+
+.page > .main > .descr > .txt{
+    color: aliceblue;
+}
+
+.page > .main > .descr > .para{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page > .main > .descr > .para > .para1{
+    color: aliceblue;
+    font-size: 70%;
+    margin-top: 20px;
+}
+
+.page > .main > .descr > .para > .para2{
+    color: aliceblue;
+    font-size: 70%;
+    margin-top: 20px;
+}
+
+.page > .main > .descr >.countr{
+    margin-top: 75px;
+}
+
+.page > .main > .descr >.countr > .txt2{
+    color: white;
+    display: flex;
+    font-size: 70%;
+
+    justify-content: space-between;
+}
+
+.page > .main > .descr >.countr > .txt2 > .buttons{
+    width:70px;
+    height:20px;
+    font-size: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C3844;
+    border-radius: 5px;
+}
+
+@media (max-width:650px){
+    .page{
+        margin-left: 15px;;
+    }
+
+    .main{
+        flex-direction: column;
+    }
+
+    .descr{
+        margin-top: 50px;
+    }
+
+    .topbar{
+        font-size: 70%;
+    }
+
+    .img3{
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (min-width:650px){
+    .descr{
+        margin-left:20px;
+        margin-right: 20px;
+    }
+
+    .img3{
+        margin-left: 20px;
+    }
+}

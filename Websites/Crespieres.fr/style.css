@@ -1,0 +1,136 @@
+body{
+    background-image: url("Assets/back.jpg")
+
+}
+
+#top{
+    display: block;
+    margin:-20px ;
+    text-align: center;
+    padding-bottom: 3.5%;
+    padding-top: 1%;
+    background-image: url("Assets/sky1.jpg");
+    background-size:cover;
+}
+
+#bottom{
+    background-color: azure;
+    display: block;
+    margin:-20px ;
+    padding-bottom: 0.6%;
+    padding-top: 0.25%;
+    padding-left: 2.5%;
+}
+
+/* #topy{
+    align-items: center;
+} */
+
+#Mairie{
+    padding-top: 1.5%;
+    display: block;
+    background-image: url("Assets/mairie.jpg");
+    background-size:cover;
+    background-position: 20%;
+    margin:-20px ;
+    padding-left: 2.5%;
+    padding-bottom: 21.5%;
+}
+
+#h1p{
+    color: white;
+}
+
+#Muni{
+    background-image: url("Assets/sky.png");
+    background-size:cover;
+    background-position: -50%;
+    padding-top: 0.25%;
+    display: block;
+    margin:-20px ;
+    padding-left: 2.5%;
+    padding-bottom: 5.5%;
+}
+
+#Ctc{
+    background-image: url("Assets/bag.jpg");
+    background-size:cover;
+    background-position: -50%;
+    display: block;
+    margin:-20px ;
+    padding-left: 2.5%;
+    padding-bottom: 2.5%;
+    padding-top: 1.2%;
+}
+
+#Civox{
+    background-image: url("Assets/back2.jpg");
+    background-size:cover;
+    background-position: -50%;
+    display: block;
+    margin:-20px ;
+    padding-left: 2.5%;
+    padding-bottom: 3.5%;
+    padding-top: 2%;
+}
+
+#com{
+    color: aliceblue;
+}
+
+.search_input{
+        width: 30%;
+        padding: 12px 24px;
+        background-color: rgba(255, 255, 255, 0.489);
+        transition: transform 250ms ease-in-out;
+        font-size: 14px;
+        line-height: 18px;
+        color: #575756;
+        border-radius: 50px;
+        border: 1px solid #575756;
+        transition: all 250ms ease-in-out;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+}
+
+.btn{
+  width: 8rem;
+  height: 2.75rem;
+  border-radius: 1rem;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .3s ease;
+  margin-left : 1%;
+
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  background-color: rgba(255, 255, 255, 0.489);
+  /* background: var(--primary); */
+}
+
+.btn1{
+    width: 8rem;
+    height: 2rem;
+    border-radius: 1rem;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s ease;
+    margin-left : 0%;
+  
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    background-color: rgba(255, 255, 255, 0.489);
+    /* background: var(--primary); */
+  }
+
+.title{
+    color:white;    
+    display: block;
+        font-weight: 100;
+        font-size: 750%;
+        padding-top: 2%;
+}
