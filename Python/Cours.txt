@@ -1,0 +1,211 @@
+Algorithmique, Programme et Structure 
+
+Installer VS Code sur linux : https://code.visualstudio.com/download
+
+Pour vérifier que Python est bien installé : python3 --version
+
+Nous allons créer un fichier python Hello.py contenant la commande : print("Hello World!")
+
+Créer une variable : typedevariable nomdelavariable = valeur
+Python est un langage au typage dynamique car nous n'avons pas besoin de préciser le type de variable
+
+Types de variables :
+- bool
+- int
+- float
+- str ; chaine de caractères
+
+print(type(var)) : pour connaitre le type d'une variable
+
+var1 = 5
+print("La valeur de notre variable est", var1)
+
+concatenner : à regarder
+
+la bonne méthode pour afficher notre phrase serait print("La 1ere variable a une valeur de :" + str(var1))
+De façon plus avancé vous pouvez écrire : print ("La 1ere variable a une valeur de :()" .format(var1))
+Permet de ne pas préciser le type à chaque fois dans le print
+
+Les conditions
+var1 = 2
+var2 = 5
+
+if var1 < var2 :
+	print("var2 est plus grand")
+else :
+	print("var1 est plus grand")
+
+< inférieur à
+> supérieur à
+== vérifier une égalité
+!= vérifier une différence
+
+if 
+else
+
+plus de condition :
+if 
+elif
+else
+
+
+var1 = 2
+var2 = 5
+var3 = 1
+
+if var1 < var2 :
+        print("var2 est plus grand")
+elif var1 < var3 :
+        print("var3 est plus grand")
+else :
+        print("var1 est plus grand")
+
+si on veut vérifier plusieurs conditions simultanément de la forme
+
+Si condition1 et/ou condition2
+sinon je fais ça
+
+if 
+
+conditions ternaires :
+lignedecode(condition vrai, condition fausse)[condition]
+
+age = 20
+majeur = 18
+
+verif = ("Vous êtes majeur depuis {} ans".format(age-majeur), "Vous êtes mineur")[age < majeur]
+print(verif)
+
+On peut combiner ce qu'on a vu précédemment :
+verif = ("Vous êtes majeur depuis {} ans".format(age-majeur), "Vous êtes mineur")[age < majeur]
+
+Les listes
+
+pour créer une liste en python :
+article_course = ["pomme", "lait", "oeufs", "sucre"]
+
+et pour l'afficher :
+print(article_course)
+print(article_course[0])#affiche le premier élement
+print(article_course[len(article_course) - 1])#affiche le dernier élement : len permet d'afficher la longueur de la liste, on retire un car on veut prendre la quatrième variable = 3 car le tableau a pour première valeur 0 donc le quatrième mot aura la place numéro 3 en étant le quzatrième de la liste.
+
+listes : 
+len : permet d’afficher la longueur d’une liste 
+Une liste commence à la position 0 donc le première élement aura l’index 0 et le deuxième élement aura l’index 1
+
+
+nomliste.insert(position, à insérer)
+article_course.insert(3, “farine”)
+
+ajouter un élement à la fin de notre liste :
+artcile_course.append(à insérer)
+
+ajouter plusieurs valeurs à la fin :
+article_course.extend(à insérer, à insérer 2);
+
+suppirmer via le numéro :
+article.pop(1)
+del article.remove[1]
+
+supprimer via la valeur attribuée
+article.remove(“bananes”)
+
+suppresion de la liste 
+article.clear()
+del article[:]
+
+
+boucles :
+for … in range = pour une valeur de départ jusqu’à une valeur d’arriver
+for nb in range(1, 5):
+	print(nb)
+
+for each in … = pour chaque valeur
+numeros = [1, 4, 8, 16]
+for num in numeros:
+	print(num)
+
+→ ne pas oublier les : à la fin de nos conditions
+
+while … → tant qur la condition est vraie (boucles infinies)
+on peut ajouter les fonctions continu ou break dans nos boucles.
+Continue s’utilise pour paser directement au tout de boucle suivant sans exécuter la suite de nos conditions
+Break permet de faire sortir de la boucle infinie et n’exécute pas les commandes qui sont situées après elle.
+
+Les fonctions
+
+on définie les fonctions avec le préfixe def
+def bienvenue():
+	print(“Bienvenue”)
+
+pour appeler notre fonction, on tape le nom de notre fonction.
+On le met au même niveau que notre def : indentation
+
+Def bienvenue():
+	print(“Bienvenue”)
+
+bienvenue()
+
+on peut envoyer des paramètres à nos fonctions :
+Def bienvenue(nom):
+	print(“Bienvenue”)
+
+nom = “Rémi”
+bienvenue(nom)
+
+on peut incrémenter es variables globales :
+def age_prochain():
+	global age
+	age += 1
+	print(“l’année prochaine vous aurez “, age)
+
+age = 20
+age_prochain()
+
+On peut mettre des valeurs par défaut :
+def how_are_you(nom = “Laetitia”:
+	print(“Bonjour”, nom)
+how_are_you()
+
+On peut aussi renvoyer des informations depuis nos informations :
+pour cela on utilise return :
+
+def sum():
+	result = 11 + 11
+	return result
+def prod():
+	return 20 * 20
+
+print(“La somme est”, sum())
+print(“Le produit est”, prod())
+
+un return n’affiche pas c’est print qui le fait
+
+on peut renvoyer plusieurs résultats différents:
+
+def max(x, y):
+	if x > y:
+		return x
+	else:
+		return y
+
+print(max(5, 7))
+
+on peut utiliser des fonctions récursives, càd des fonctions qui s’appelent elles-mêmes :
+
+def sum(x):
+	x += 1
+	print(x)
+	if x < 50:
+		sum(x)
+
+sum(1)
+
+
+
+#commentaire1
+
+“””
+COMMENTAIRE2
+“””
+
