@@ -1,0 +1,11 @@
+//compter nombre de et nombre de mots
+
+longText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis purus ut nunc tempus, ut sollicitudin nisl rhoncus. Sed non sodales orci, nec suscipit massa. Curabitur efficitur mi diam, vitae aliquam tortor varius eu. Morbi tincidunt nibh nec mattis vulputate. Curabitur ultrices neque non consequat lobortis. Sed quis mattis ex, eu suscipit urna. Aliquam risus leo, iaculis sed eros et, faucibus finibus odio. Duis venenatis egestas ante, eget accumsan lectus convallis ac. Pellentesque luctus tempor mi ac mollis. Vivamus scelerisque blandit nulla, sit amet facilisis lectus iaculis quis. Cras tempus odio urna, et molestie lectus fermentum vitae. Quisque aliquam orci vestibulum ultricies condimentum. Integer ac mauris vulputate, feugiat ligula et, fermentum justo. Vivamus sagittis fringilla enim nec commodo. Mauris posuere blandit ligula convallis ultricies. Mauris lacinia dignissim nibh id finibus. Nulla orci purus, sollicitudin quis velit interdum, volutpat consectetur orci. Curabitur sit amet est magna. Aenean ullamcorper velit vitae arcu consectetur auctor. Sed rhoncus diam orci, eu sagittis elit volutpat id. Sed id nibh non risus efficitur fringilla nec non purus. Proin iaculis interdum velit at pellentesque. Etiam tempor nec urna a mattis. Morbi sed nisi accumsan, mattis quam quis, pretium tortor. Suspendisse potenti. Nullam in nisi bibendum, tristique elit vitae, venenatis mauris. Etiam eget sodales erat, congue interdum quam. Curabitur rhoncus blandit est vel ultricies. Aliquam rhoncus tortor sit amet blandit aliquam. Suspendisse tincidunt nisi eu sem efficitur vestibulum. Phasellus commodo posuere justo ut convallis. Vivamus scelerisque tempor tortor eu bibendum. Morbi a placerat arcu. Morbi vestibulum ullamcorper aliquam."
+
+longText2 = "Bonjour et bienvenue et salut au revoir"
+
+wordText = longText.split(" ")
+
+andText = longText.split("et")
+
+console.log(longText.length + " caractères dans la variable\n" + wordText.length + " mots dans la variable\n" + (andText.length -1) + " 'et' dans la variable")

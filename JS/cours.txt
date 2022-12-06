@@ -1,0 +1,43 @@
+- 1995
+- Dynamiser les sites WEB
+- installer Node
+- let permet de déclarer une variable mais ne permet pas de redéclarer celle-ci
+let nomdelavariable
+- typeof permet de vérifier le type de variable
+- const permet de déclarer une variable comme constante
+- var permet de déclarer une variable redéclarable
+- types:
+
+number
+string
+boolean
+null
+undefined
+
+- NoN : Not a Number -> erreur de calcul
+
+
+- + : concaténer 
+
+- operator :
+
+- soustraction
++ addition
+/ division
+* multiplication
+% modulo
+** exposant
+pemas
+
+- Math.round : permet d'arrondir
+- Math.floor : arrondir entier supérieur
+- Math.ceil : arrondir entier inférieur
+- Math.min
+- Math.max
+- nomdelavariable $(x) : permet de concaténer
+- nomdelavariable.indexOf() : permet de connaitre le début de la position de l'objet cherché
+- nom1.localCompare(nom2) : premet de comparer deux éléments
+
+- OR (||)
+- AND (&&)
+- NOT (!) : revient à l'inverse
