@@ -11,6 +11,16 @@ class Soldier {
     receiveDamage(damage){
         this.health -= damage
     }
+    isAlive(){
+        return this.health > 0 ? true : false
+    }
+    //     opération ternaire
+    //     if(this.health > 0){
+    //         isAlive = true
+    //     } else {
+    //         isAlive = false
+    //     }
+    // }
         
 }
 
@@ -67,14 +77,30 @@ class War {
         this.viking.receiveDamage(this.saxon.attack())
     }
     nextRound(){
-        if(turn==false){
-            this.vikingAttack()
+        this.turn = !this.turn
+        if(this.turn==false){
+            return this.vikingAttack()
+        }else{
+            return this.saxonAttack()
         }
+    }
+    isEveryoneAlive(){
+        if(this.viking.isAlive() && this.SVGAnimationElement.isAlive){
+            return true
+        }
+        return false
     }
 }
 
-const viking = new Viking("Ragnar",150, 14)
-console.log(viking.attack())
-viking.receiveDamage(32)
+// const viking = new Viking("Ragnar",150, 14)
+// console.log(viking.attack())
+// viking.receiveDamage(32)
 // console.log(viking.health())
-const saxon = new Saxon(120,30)
+// const saxon = new Saxon(120,30)
+
+const war = new War()
+// let i = 0
+while(war.isEveryoneAlive()){
+    console.log(war.nextRound())
+    i++
+}
