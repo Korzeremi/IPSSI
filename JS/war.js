@@ -58,12 +58,18 @@ class War {
     constructor(){
         this.viking = new Viking("Ragnar", 120, 30)
         this.saxon = new Saxon(150, 20)
+        this.turn = false
     }
     vikingAttack(){
         this.saxon.receiveDamage(this.viking.attack())
     }
     saxonAttack(){
         this.viking.receiveDamage(this.saxon.attack())
+    }
+    nextRound(){
+        if(turn==false){
+            this.vikingAttack()
+        }
     }
 }
 
