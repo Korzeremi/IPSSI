@@ -1,0 +1,89 @@
+/* *{
+} */
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: grey;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page .title{
+    margin-bottom:10px;
+}
+
+.page > .simon{
+    height: 700px;
+    width: 700px;
+    background-color: black;
+    margin-bottom: 2.5%;
+    border-radius: 1px;
+    border: black;
+    border-style: solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page .simon .left{
+    width: 50%;
+    height: 100%;
+}
+
+.page .simon .right{
+    width: 50%;
+    height: 100%;
+}
+
+.btn {
+    width: 700px;
+    border: black;
+    border-radius: 1px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+}
+
+.button {
+    height: 50%;
+    width: 100%;
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#green {
+    background-color: green;
+}
+
+#points {
+    background-color: orange;
+    height: 30px;
+}
+
+#enter {
+    background-color: cyan;
+    height: 30px;
+}
+
+.button2{
+    width: 50%;
+}
