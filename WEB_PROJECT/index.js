@@ -134,7 +134,7 @@ class Display{
                 $("#red").css("background-color", "white")
                 setTimeout(function(){
                     $("#red").css("background-color", "#5BC0BE")
-                },600)
+                },300)
                 
             }else if(this.game.computerSequence[index]==1){
                 var audio8 = new Audio('ding.mp3');
@@ -142,7 +142,7 @@ class Display{
                 $("#yellow").css("background-color", "white")
                 setTimeout(function(){
                     $("#yellow").css("background-color", "#3A506B")
-                },600)
+                },300)
                 
             }else if(this.game.computerSequence[index]==2){
                 var audio8 = new Audio('ding.mp3');
@@ -150,7 +150,7 @@ class Display{
                 $("#blue").css("background-color", "white")
                 setTimeout(function(){
                     $("#blue").css("background-color", "#338685")
-                },600)
+                },300)
                 
             }else if(this.game.computerSequence[index]==3){
                 var audio8 = new Audio('ding.mp3');
@@ -158,13 +158,13 @@ class Display{
                 $("#green").css("background-color", "white")
                 setTimeout(function(){
                     $("#green").css("background-color", "#1C2541")
-                },600)
+                },300)
 
             }else if(index>=this.game.computerSequence.length){
                 clearInterval(id)
             }
 
-        }, 1000)
+        }, 600)
     }
     //----------------------------------------------------------------------------------------------------------------------------
     music(){
