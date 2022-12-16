@@ -1,0 +1,149 @@
+/* *{
+} */
+
+*{
+    font-family: 'Permanent Marker', cursive;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: black;
+}
+
+.center{
+    width: 150px;
+    height: 150px;
+    background-color: #0E41C1;
+    position: relative;
+    border-radius: 50%;
+    top: -420px;
+    left: 275px;
+    box-shadow: 0px 0px 40px rgb(14, 65, 206);
+}
+
+.textCenter{
+    color:white;
+    text-align: center;
+    padding-top: 65px;
+}
+
+.gameover{
+    width:700px;
+    height:705px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 25px;
+    border: black;
+    border-style: solid;
+    box-shadow: 0px 0px 40px rgb(14, 65, 206);
+}
+
+.gameover .img1{
+    width:700px;
+    height: 700px;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page .title{
+    margin-bottom:25px;
+    margin-top: 25px;
+    color: white;
+    font-size: 300%;
+    text-shadow:5px 5px 7px rgb(4, 46, 236);
+}
+
+.page > .simon{
+    height: 700px;
+    width: 700px;
+    margin-bottom: 2.5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page .simon .left{
+    width: 50%;
+    height: 100%;
+}
+
+.page .simon .right{
+    width: 50%;
+    height: 100%;
+}
+
+.btn {
+    width: 700px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    height: 50%;
+    width: 100%;
+}
+
+#red {
+    background-color: #5BC0BE;
+    border-radius: 25px 1px 1px 1px;
+    border: rgb(14, 65, 206);
+    border-style: solid;
+}
+
+#yellow {
+    background-color: #3A506B;
+    border-radius: 1px 1px 1px 25px;
+    border: rgb(14, 65, 206);
+    border-style: solid;
+}
+
+#blue {
+    background-color: #338685;
+    border-radius: 1px 25px 1px 1px;
+    border: rgb(14, 65, 206);
+    border-style: solid;
+}
+
+#green {
+    background-color: #1C2541;
+    border-radius: 1px 1px 25px 1px;
+    border: rgb(14, 65, 206);
+    border-style: solid;
+}
+
+#points {
+    background-color: #3A506B;
+    box-shadow: 0px 0px 40px rgb(14, 65, 206);
+    border-radius: 1px 25px 25px 1px;
+    border: rgb(14, 65, 206);
+    border-style: solid;
+    height: 50px;
+    font-size: 150%;
+    color:white;
+    text-shadow:5px 5px 7px black;
+}
+
+#enter {
+    background-color: #617a97;
+    box-shadow: 0px 0px 40px rgb(14, 65, 206);
+    border-radius: 25px 1px 1px 25px;
+    border: rgb(14, 65, 206);
+    border-style: solid;
+    height: 50px;
+    font-size: 150%;
+    color: white;
+    text-shadow:5px 5px 7px black;
+}
+
+.button2{
+    width: 50%;
+}
