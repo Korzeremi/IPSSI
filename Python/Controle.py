@@ -1,6 +1,7 @@
 #Rémi KORZENIOWSKI
 #IPSSI BTC 25.1
 
+#Hello World
 #Exercice 1
 def ClueFinder ():
     chain = 'default'
